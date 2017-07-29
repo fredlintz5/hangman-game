@@ -44,28 +44,23 @@ body {
 }
 
 #footer {
-	position: absolute;
+	/*position: absolute;
 	bottom: 0px;
-	width: 1170px;
+	width: 1170px;*/
 	background: #333;
 	height: 60px;
 	color: white;
+}
+
+#footer p {
 	line-height: 60px;
+	margin: 0px;
 }
 
 
 /********************************************
 				Responsive
 ********************************************/
-
-
-
-@media only screen and (max-width: 1200px) {
-
-	#footer {
-		width: 970px;
-	}
-}
 
 @media only screen and (max-width: 991px) {
 
@@ -78,9 +73,6 @@ body {
 		height: 300px;
 	}
 
-	#footer {
-		width: 750px;
-	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -98,9 +90,6 @@ body {
 		height: 300px;
 	}
 
-	#footer {
-		width: 100%;
-	}
 }
 
 
