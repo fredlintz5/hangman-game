@@ -22,6 +22,7 @@ body {
 #row2 {
 	padding-top: 5%;
 	padding-bottom: 5%;
+	height: auto;
 }
 
 #textArea {
@@ -85,8 +86,8 @@ body {
 @media only screen and (max-width: 767px) {
 
 	#row2 {
-		padding-top: 0;
-		padding-bottom: 0;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 
 	#textArea {
