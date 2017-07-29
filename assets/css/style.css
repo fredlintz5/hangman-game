@@ -1,3 +1,109 @@
-#randomWord, #guessed {
-	letter-spacing: 3px;
+body {
+	background: #F1F1F1;
 }
+
+.container {
+	text-align: center;
+	background: #fff; 
+}
+
+#header {
+	background: #333;
+	height: 100px;
+	color: white;
+	margin-top: 5px;
+}
+
+#header h1 {
+	line-height: 100px;
+	margin: 0px;
+}
+
+#row2 {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#textArea {
+	padding-top: 50px;
+}
+
+#randomWord {
+	letter-spacing: 4px;
+	font-size: x-large;
+}
+
+#guessed {
+	padding-top: 15px;
+	font-size: large;
+}
+
+#remainingGuesses {
+	font-size: large;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	width: 1170px;
+	background: #333;
+	height: 60px;
+	color: white;
+	line-height: 60px;
+}
+
+
+/********************************************
+				Responsive
+********************************************/
+
+
+
+@media only screen and (max-width: 1200px) {
+
+	#footer {
+		width: 970px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+
+	#row2 {
+		padding-top: 12%;
+		padding-bottom: 12%;
+	}
+
+	img {
+		height: 300px;
+	}
+
+	#footer {
+		width: 750px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	#row2 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	img {
+		height: 300px;
+	}
+
+	#footer {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -8,31 +8,46 @@
 
     <title>Hangman</title> 
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/javascript/hangman.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="assets/javascript/hangman.js"></script>
 
   
 </head>
 <body>
 
+<div class="container">
 
+	<div class="row" id="header">
+		<div class="col-sm-12">
+			<h1>Hang-Man</h1>
+		</div>
+	</div>
 
-<div id="randomWord">insert Random Word here...</div>
-<br>
-<div id="guessed"></div>
-<br>
-<div id="remainingGuesses"></div>
-<br>
-<div id="hangman"></div>
+	<div class="row" id="row2">
+		<div class="col-sm-6" id="textArea">
+			<div id="randomWord"></div>
+			<br>
+			<div>Letters Guessed: 
+				<div id="guessed"></div>
+			</div>
+			<br>
+			<div id="remainingGuesses">Guesses Remaining: 7</div>
+		</div>
+		<div class="col-sm-6" id="imageArea">
+			<div id="hangman"><img src=assets/images/hangman-6.png height='400'/></div>
+		</div>
+	</div>
 
+	<div class="row" id="footer">
+		<div class="col-sm-12">
+			<p>&copy Copyright - Fred Lintz - 2017<p>
+		</div>
+	</div>
 
-
-
-
-
-
-
-
+</div>
 
 </body>
 </html>
