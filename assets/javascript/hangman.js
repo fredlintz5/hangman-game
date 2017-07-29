@@ -85,6 +85,7 @@ function checkWin() {
             alert("You Win! Refresh page for new game.");
         } else if (guessesRemaining === 0) {
             alert("You Lose! Refresh page for new game.");
+            document.getElementById('randomWord').innerHTML = randomWord;
         }
 }   
 
