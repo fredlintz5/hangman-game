@@ -89,6 +89,10 @@ body {
 		padding-bottom: 0;
 	}
 
+	#textArea {
+		padding-top: 20px;
+	}
+
 	img {
 		height: 300px;
 	}
