@@ -82,9 +82,14 @@ function underScores() {
 //checks to see if player wins or loses, and alerts the answer
 function checkWin() {
     if (underScoreWord === randomWord) {
-            alert("You Win! Refresh page for new game.");
+            setTimeout(function() {
+                alert("You Win! Refresh page for new game.");
+            } , 600);
+            
         } else if (guessesRemaining === 0) {
-            alert("You Lose! Refresh page for new game.");
+            setTimeout(function() {
+                alert("You Lose! Refresh page for new game.");
+            } , 600);
             $('#randomWord').html(randomWord);
         }
 }   
