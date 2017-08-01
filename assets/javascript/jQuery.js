@@ -10,6 +10,9 @@ var indexes = [];
 var trueFalse = false;
 
 
+setTimeout(function() {
+    alert("Try to guess the hidden word. If you don't guess wisely, it will not end well for you...");
+} , 600);
 //call underscore function to display randomWord underscores
 underScores();
 
