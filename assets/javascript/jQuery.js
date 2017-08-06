@@ -10,9 +10,6 @@ var indexes = [];
 var trueFalse = false;
 
 
-setTimeout(function() {
-    alert("Try to guess the hidden word. If you don't guess wisely, it will not end well for you...");
-} , 600);
 //call underscore function to display randomWord underscores
 underScores();
 
@@ -86,14 +83,18 @@ function underScores() {
 function checkWin() {
     if (underScoreWord === randomWord) {
             setTimeout(function() {
-                alert("You Win! Refresh page for new game.");
+                alert("You Win!");
             } , 600);
+            location.reload();
             
         } else if (guessesRemaining === 0) {
             setTimeout(function() {
-                alert("You Lose! Refresh page for new game.");
+                alert("You're a Loser!");
             } , 600);
             $('#randomWord').html(randomWord);
+            setTimeout(function() {
+                location.reload();
+            } , 600);
         }
 }   
 
@@ -112,6 +113,7 @@ function images(){
         $('#hangman').html("<img src='assets/images/hangman-3.png' height='400'/>");
         
     } else if (guessesRemaining === 2) {
+        $("#textArea").append("<div>" + 'Hint...All of the words are fruits.');
         $('#hangman').html("<img src='assets/images/hangman-2.png' height='400'/>");
         
     } else if (guessesRemaining === 1) {
