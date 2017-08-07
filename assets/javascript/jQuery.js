@@ -84,8 +84,11 @@ function checkWin() {
     if (underScoreWord === randomWord) {
             setTimeout(function() {
                 alert("You Win!");
+            } , 400);
+            setTimeout(function() {
+                location.reload();
             } , 600);
-            location.reload();
+            
             
         } else if (guessesRemaining === 0) {
             setTimeout(function() {
