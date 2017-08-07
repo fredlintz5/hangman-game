@@ -113,7 +113,7 @@ function images(){
         $('#hangman').html("<img src='assets/images/hangman-3.png' height='400'/>");
         
     } else if (guessesRemaining === 2) {
-        $("#textArea").append("<div>" + 'Hint...All of the words are fruits.');
+        $("#hint").css("display", "inherit");
         $('#hangman').html("<img src='assets/images/hangman-2.png' height='400'/>");
         
     } else if (guessesRemaining === 1) {
