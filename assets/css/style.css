@@ -1,21 +1,26 @@
 body {
-	background: #F1F1F1;
+	width: 85%;
+	margin: auto;
+	background: #EEEEEE;
 }
 
 .container {
+	/*margin: 5% 0 5% 0;*/
+	/*height: auto;*/
+    /*padding-bottom: 50px;*/
+    border: 1px solid #333;
 	text-align: center;
 	background: #fff; 
 }
 
 #header {
 	background: #333;
-	height: 100px;
+	height: 70px;
 	color: white;
-	margin-top: 5px;
 }
 
 #header h1 {
-	line-height: 100px;
+	line-height: 70px;
 	margin: 0px;
 }
 
